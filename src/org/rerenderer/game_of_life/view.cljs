@@ -20,5 +20,5 @@
               :width 1920
               :height 1080
               :color "white"}
-             (for [cell-data cells]
-               (cell cell-data))))
+    (for [cell-data cells]
+      (cell cell-data))))

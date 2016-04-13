@@ -48,6 +48,6 @@
 (defn main-controller
   [event-ch state-atom options]
   (go-loop []
-           (<! (timeout 100))
-           (swap! state-atom update :cells tick)
-           (recur)))
+    (<! (timeout 100))
+    (swap! state-atom update :cells tick)
+    (recur)))
