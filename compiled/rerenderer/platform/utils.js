@@ -7,5 +7,3 @@ return cljs.core.js__GT_clj.call(null,JSON.parse(data),new cljs.core.Keyword(nul
 rerenderer.platform.utils.to_json = (function rerenderer$platform$utils$to_json(data){
 return JSON.stringify(cljs.core.clj__GT_js.call(null,data));
 });
-
-//# sourceMappingURL=utils.js.map

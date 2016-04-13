@@ -15,5 +15,3 @@ cljs.core.reset_BANG_.call(null,rerenderer.lang.gc.refs_cache,used);
 
 return cljs.core.concat.call(null,script,cljs.core.map.call(null,rerenderer.lang.forms.__GT_Free,to_gc));
 });
-
-//# sourceMappingURL=gc.js.map

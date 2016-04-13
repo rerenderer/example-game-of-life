@@ -23,14 +23,14 @@ rerenderer.platform.browser.core.render_browser = (function rerenderer$platform$
 if((!((_ == null))) && (!((_.rerenderer$platform$browser$core$IBrowser$render_browser$arity$2 == null)))){
 return _.rerenderer$platform$browser$core$IBrowser$render_browser$arity$2(_,ctx);
 } else {
-var x__18953__auto__ = (((_ == null))?null:_);
-var m__18954__auto__ = (rerenderer.platform.browser.core.render_browser[goog.typeOf(x__18953__auto__)]);
-if(!((m__18954__auto__ == null))){
-return m__18954__auto__.call(null,_,ctx);
+var x__6811__auto__ = (((_ == null))?null:_);
+var m__6812__auto__ = (rerenderer.platform.browser.core.render_browser[goog.typeOf(x__6811__auto__)]);
+if(!((m__6812__auto__ == null))){
+return m__6812__auto__.call(null,_,ctx);
 } else {
-var m__18954__auto____$1 = (rerenderer.platform.browser.core.render_browser["_"]);
-if(!((m__18954__auto____$1 == null))){
-return m__18954__auto____$1.call(null,_,ctx);
+var m__6812__auto____$1 = (rerenderer.platform.browser.core.render_browser["_"]);
+if(!((m__6812__auto____$1 == null))){
+return m__6812__auto____$1.call(null,_,ctx);
 } else {
 throw cljs.core.missing_protocol.call(null,"IBrowser.render-browser",_);
 }
@@ -42,17 +42,17 @@ throw cljs.core.missing_protocol.call(null,"IBrowser.render-browser",_);
  * Return canvas from options or first canvas in the document.
  */
 rerenderer.platform.browser.core.get_canvas = (function rerenderer$platform$browser$core$get_canvas(options){
-var or__18298__auto__ = new cljs.core.Keyword(null,"canvas","canvas",-1798817489).cljs$core$IFn$_invoke$arity$1(options);
-if(cljs.core.truth_(or__18298__auto__)){
-return or__18298__auto__;
+var or__6156__auto__ = new cljs.core.Keyword(null,"canvas","canvas",-1798817489).cljs$core$IFn$_invoke$arity$1(options);
+if(cljs.core.truth_(or__6156__auto__)){
+return or__6156__auto__;
 } else {
 return (document.getElementsByTagName("canvas")[(0)]);
 }
 });
-cljs.core._add_method.call(null,rerenderer.platform.core.apply_script_BANG_,new cljs.core.Keyword(null,"browser","browser",828191719),(function (script,p__24915,options){
-var vec__24916 = p__24915;
-var _ = cljs.core.nth.call(null,vec__24916,(0),null);
-var root_ref = cljs.core.nth.call(null,vec__24916,(1),null);
+cljs.core._add_method.call(null,rerenderer.platform.core.apply_script_BANG_,new cljs.core.Keyword(null,"browser","browser",828191719),(function (script,p__20100,options){
+var vec__20101 = p__20100;
+var _ = cljs.core.nth.call(null,vec__20101,(0),null);
+var root_ref = cljs.core.nth.call(null,vec__20101,(1),null);
 var canvas = rerenderer.platform.browser.core.get_canvas.call(null,options);
 var ctx = canvas.getContext("2d");
 var pool = rerenderer.platform.browser.interpreter.interpret_BANG_.call(null,script);
@@ -80,10 +80,10 @@ throw (new Error([cljs.core.str("Assert failed: "),cljs.core.str(cljs.core.pr_st
 cljs.core.reset_BANG_.call(null,rerenderer.lang.core.script,cljs.core.PersistentVector.EMPTY);
 
 var script = rerenderer.lang.core.script;
-var result__24907__auto__ = (function (){var map__24919 = rerenderer.types.component.props.call(null,component);
-var map__24919__$1 = ((((!((map__24919 == null)))?((((map__24919.cljs$lang$protocol_mask$partition0$ & (64))) || (map__24919.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__24919):map__24919);
-var width = cljs.core.get.call(null,map__24919__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var height = cljs.core.get.call(null,map__24919__$1,new cljs.core.Keyword(null,"height","height",1025178622));
+var result__20092__auto__ = (function (){var map__20104 = rerenderer.types.component.props.call(null,component);
+var map__20104__$1 = ((((!((map__20104 == null)))?((((map__20104.cljs$lang$protocol_mask$partition0$ & (64))) || (map__20104.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__20104):map__20104);
+var width = cljs.core.get.call(null,map__20104__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var height = cljs.core.get.call(null,map__20104__$1,new cljs.core.Keyword(null,"height","height",1025178622));
 var canvas = rerenderer.lang.core.rcall_BANG_.call(null,rerenderer.lang.forms.__GT_Static.call(null,"document"),"createElement",new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["canvas"], null));
 var ctx = rerenderer.lang.core.rcall_BANG_.call(null,canvas,"getContext",new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["2d"], null));
 rerenderer.lang.core.rset_BANG_.call(null,canvas,"width",width);
@@ -96,7 +96,7 @@ return rerenderer.types.render_result.__GT_RenderResult.call(null,cljs.core.dere
 })();
 cljs.core.reset_BANG_.call(null,rerenderer.lang.core.script,cljs.core.PersistentVector.EMPTY);
 
-return result__24907__auto__;
+return result__20092__auto__;
 }));
 cljs.core._add_method.call(null,rerenderer.platform.core.render_to,new cljs.core.Keyword(null,"browser","browser",828191719),(function (child,parent){
 if((child instanceof rerenderer.types.node.Node)){
@@ -112,20 +112,18 @@ throw (new Error([cljs.core.str("Assert failed: "),cljs.core.str(cljs.core.pr_st
 cljs.core.reset_BANG_.call(null,rerenderer.lang.core.script,cljs.core.PersistentVector.EMPTY);
 
 var script = rerenderer.lang.core.script;
-var result__24907__auto__ = (function (){
-var ctx_24921 = rerenderer.lang.core.rcall_BANG_.call(null,new cljs.core.Keyword(null,"canvas","canvas",-1798817489).cljs$core$IFn$_invoke$arity$1(parent),"getContext",new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["2d"], null));
-rerenderer.lang.core.rcall_BANG_.call(null,ctx_24921,"drawImage",new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"canvas","canvas",-1798817489).cljs$core$IFn$_invoke$arity$1(child),new cljs.core.Keyword(null,"x","x",2099068185).cljs$core$IFn$_invoke$arity$1(child),new cljs.core.Keyword(null,"y","y",-1757859776).cljs$core$IFn$_invoke$arity$1(child)], null));
+var result__20092__auto__ = (function (){
+var ctx_20106 = rerenderer.lang.core.rcall_BANG_.call(null,new cljs.core.Keyword(null,"canvas","canvas",-1798817489).cljs$core$IFn$_invoke$arity$1(parent),"getContext",new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["2d"], null));
+rerenderer.lang.core.rcall_BANG_.call(null,ctx_20106,"drawImage",new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"canvas","canvas",-1798817489).cljs$core$IFn$_invoke$arity$1(child),new cljs.core.Keyword(null,"x","x",2099068185).cljs$core$IFn$_invoke$arity$1(child),new cljs.core.Keyword(null,"y","y",-1757859776).cljs$core$IFn$_invoke$arity$1(child)], null));
 
 return cljs.core.deref.call(null,script);
 })()
 ;
 cljs.core.reset_BANG_.call(null,rerenderer.lang.core.script,cljs.core.PersistentVector.EMPTY);
 
-return result__24907__auto__;
+return result__20092__auto__;
 }));
 cljs.core._add_method.call(null,rerenderer.platform.core.information,new cljs.core.Keyword(null,"browser","browser",828191719),(function (options){
 var canvas = rerenderer.platform.browser.core.get_canvas.call(null,options);
 return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"width","width",-384071477),canvas.width,new cljs.core.Keyword(null,"height","height",1025178622),canvas.height,new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"keyboard","keyboard",-617357087),null,new cljs.core.Keyword(null,"mouse","mouse",478628972),null], null), null)], null);
 }));
-
-//# sourceMappingURL=core.js.map

@@ -14,5 +14,3 @@ org.rerenderer.game_of_life.core.game = rerenderer.core.init_BANG_.call(null,new
 org.rerenderer.game_of_life.core.on_reload = (function org$rerenderer$game_of_life$core$on_reload(){
 return rerenderer.debug.rerender_BANG_.call(null,org.rerenderer.game_of_life.core.game);
 });
-
-//# sourceMappingURL=core.js.map

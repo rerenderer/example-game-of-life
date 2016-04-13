@@ -34,5 +34,3 @@ cljs.core.swap_BANG_.call(null,rerenderer.lang.core.script,cljs.core.conj,rerend
 
 return result_ref;
 });
-
-//# sourceMappingURL=core.js.map
