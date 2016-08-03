@@ -2,18 +2,19 @@
   (:require-macros [cljs.core.async.macros :refer [go]])
   (:require [cljs.core.async :refer [chan >!]]
             [rerenderer.platform.core :refer [listen! information]]
-            [rerenderer.render :refer [render-component! get-render-ch]]))
+            [rerenderer.render :refer [get-render-ch]]))
 
-(defrecord Game [state-atom initial-state platform-info render-ch event-ch])
+(defrecord ^:no-doc Game [state-atom initial-state platform-info render-ch event-ch])
 
 (defn init!
-  "Initializes new rerenderer application, required params:
-    - root-view - function for rendering root canvas - (fn [state options])
-    - event-handler - function for handling events - (fn [event-ch state-atom options])
-    - scale - true/false
-    - **options - additional platform/app-dependent options.
+  "Initializes new rerenderer application.
 
-  Returns Game record."
+  * `root-view` - function for rendering root canvas - `(fn [state options])`;
+  * `event-handler` - function for handling events - `(fn [event-ch state-atom options])`;
+  * `scale` - scale image to screen - `true/false`;
+  * `options` - additional platform/app-dependent options.
+
+  Returns `Game` record."
   [& {:keys [root-view event-handler state] :as options}]
   {:pre [(ifn? root-view)
          (map? state)]}
