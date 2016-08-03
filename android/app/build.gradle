@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "org.rerenderer.game_of_life"
@@ -28,5 +28,5 @@ repositories {
 dependencies {
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.android.support:design:23.3.0'
-    compile 'org.rerenderer:android:0.3.6'
+    compile 'org.rerenderer:android:0.4.1'
 }

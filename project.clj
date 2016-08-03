@@ -7,17 +7,16 @@
                  [org.clojure/clojurescript "1.7.228"]
                  [org.clojure/core.match "0.3.0-alpha4"]
                  [org.clojure/core.async "0.2.371"]
-                 [org.rerenderer/rerenderer "0.3.1"]]
+                 [org.rerenderer/rerenderer "0.4.0"]]
   :plugins [[lein-cljsbuild "1.1.2"]
             [lein-figwheel "0.5.0-6"]]
   :source-paths ["src"]
   :cljsbuild {:builds {:main {:source-paths ["src"]
-                              :figwheel {:websocket-host "192.168.2.110"
-                                         :on-jsload "org.rerenderer.game-of-life.core/on-reload"}
+                              :figwheel {:on-jsload "org.rerenderer.game-of-life.core/on-reload"}
                               :compiler {:output-to "resources/public/compiled/main.js"
                                          :output-dir "resources/public/compiled"
                                          :asset-path "./compiled"
                                          :source-map true
                                          :main "org.rerenderer.game-of-life.core"
-                                         :optimizations :none
+                                         :optimizations :whitespace
                                          :pretty-print false}}}})
